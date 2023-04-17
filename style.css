@@ -192,7 +192,7 @@ main {
 
 .content-students {
     padding-left: calc(50% - 1202px / 2);
-    padding-right: calc(50% - 1202px / 2);
+
     margin-bottom: 519px;
 }
 
@@ -226,7 +226,7 @@ main {
 }
 
 .student__name {
-    width: 156px;
+
     height: 23px;
     text-align: center;
 
@@ -237,6 +237,14 @@ main {
 
 
     color: #000000;
+}
+
+.address_number {
+    margin-top: 30px;
+}
+
+.student_link {
+    text-decoration: none;
 }
 
 /* contacts*/
@@ -326,13 +334,24 @@ main {
 .video {
     width: 820px;
     height: 549.33px;
-    border: 2px solid #EA5D21
+
 }
 
 
 
 
 /* адаптивность*/
+@media (max-width:1440px) {
+    .map {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .header {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+}
 
 @media (max-width: 1024px) {
     .header {
@@ -396,7 +415,7 @@ main {
     }
 
     .address {
-        width: 300px;
+        width: 280px;
         margin-left: 30px;
     }
 
@@ -454,17 +473,7 @@ main {
     }
 }
 
-@media (max-width:1440px) {
-    .map {
-        width: 90%;
-        margin-left: 20px;
-    }
 
-    .header {
-        padding-left: 34px;
-        padding-right: 34px;
-    }
-}
 
 /* Регистрация*/
 
@@ -474,11 +483,10 @@ main {
     background: #FFFFFF;
     border: 1px solid #213B7E;
     position: absolute;
-    top: 160px;
     margin-left: calc(50% - 500px / 2);
     margin-right: calc(50% - 500px / 2);
     display: flex;
-
+    top: 160px;
     flex-direction: column;
     align-items: center;
 
@@ -518,13 +526,11 @@ main {
 }
 
 .regist_el_login {
-    padding-left: 14px;
-    padding-right: 14px;
     font-size: 24px;
     margin-top: 36px;
-
-
-    width: 444px;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 430px;
     height: 55px;
 
     background: #FFFFFF;
@@ -532,12 +538,11 @@ main {
 }
 
 .regist_el_password {
-    padding-left: 14px;
-    padding-right: 14px;
     font-size: 24px;
     margin-top: 56px;
-
-    width: 444px;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 430px;
     height: 55px;
 
 
@@ -559,4 +564,95 @@ main {
     align-items: center;
     text-decoration: none;
     margin-top: 56px;
+}
+
+/* student */
+.about_title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about_subtitle {
+    margin-bottom: 10px;
+}
+
+.subtitle_about_me {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info_s {
+
+    width: 450px;
+
+}
+
+.info_student_blok {
+    margin-bottom: 5px;
+
+    list-style-type: none;
+
+
+}
+
+.info_student_1 {
+    font-weight: 700;
+    width: 112px;
+}
+
+.page-item {
+    box-sizing: border-box;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    border: 0;
+}
+
+.true {
+    box-sizing: border-box;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    text-decoration: none;
+}
+
+.pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+}
+
+.subtitle_two {
+    margin-top: 10px;
+}
+
+.content_two {
+    padding-left: calc(50% - 500px / 2);
+    padding-right: calc(50% - 500px / 2);
+    margin-bottom: 187px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
 }
